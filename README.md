@@ -57,10 +57,21 @@ python3 main.py --words 100
 python3 main.py --forever
 ```
 
+### Running with Docker
+```bash
+# Build the Docker image
+docker build -t typr .
+
+# Run the container
+docker run -it --rm typr
+
+# Run with custom options
+docker run -it --rm typr python3 main.py --time 60 --forgive-errors
+```
+
 ## Roadmap
 - [ ] Add a setting for the wordlist.
 - [ ] Add a setting for the language.
-
 
 ## Contributing
 
